@@ -1,0 +1,1275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  background: #282a35 ! important; 
+  margin: 0; 
+  padding:0;
+}
+nav{
+    background: white;
+    display: flex;
+    min-height: 80px;
+    min-width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.logo{
+    width: 6%;
+    background: none;
+}
+.logo img{
+    width: 100%;
+    background: none;
+}
+.menu-ctn > li{
+    display: inline-block;
+    color: black;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    position: relative;
+
+}
+ul{
+    list-style: none;
+}
+#drop-down{
+    display: none;
+    position: absolute;
+    width: 200px;
+    background: whitesmoke;
+    text-align: center;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 130%;
+    
+}
+#drop-down li{
+    padding: 20px 20px;
+    cursor: pointer;
+}
+#drop-down li:hover{
+    background: grey;
+    transition: 0.3s ease-in-out;
+}
+#drop-down.active{
+    display: block;
+}
+#drop-down1{
+    display: none;
+    position: absolute;
+    width: 200px;
+    background: whitesmoke;
+    text-align: center;
+    z-index: 10;
+    left: 0;
+    top: 130%;
+    cursor: pointer;
+}
+#drop-down1 li{
+    padding: 20px 20px;
+}
+#drop-down1 li:hover{
+    background: gray;
+    transition: 0.3s ease-in-out;
+}
+#drop-down1.active{
+    display: block;
+}
+
+#drop-down2{
+    display: none;
+    position: absolute;
+    width: 200px;
+    background: whitesmoke;
+    text-align: center;
+    z-index: 10;
+    left: 0;
+    top: 130%;
+}
+#drop-down2 li{
+    padding: 20px 20px;
+    cursor: pointer;
+}
+#drop-down2 li:hover{
+    background: gray;
+    transition: 0.3s ease-in-out;
+}
+#drop-down2.active{
+    display: block;
+}
+.btn{
+    font-size: 1.2rem;
+    width: 10%;
+    padding: 10px;
+    border-radius: 1rem;
+    background: green;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover{
+    opacity: 0.7;
+}
+@media (max-width:760px){
+    .btn{
+        font-size: 1.2rem;
+        width: 50%;
+        padding: 10px;
+        border-radius: 1rem;
+        background: green;
+        color: black;
+        border: none;
+        cursor: pointer;
+    }
+    
+nav{
+    background: white;
+    display: flex;
+    min-height: 20px;
+    min-width: 90%;
+}       
+    #drop-down{
+        display: none;
+        position: absolute;
+        width: 200px;
+        background: whitesmoke;
+        text-align: center;
+        z-index: 10;
+        left: 0;
+        right: 0;
+        top: 130%;
+        
+    }
+    
+.logo{
+    font-size: 4rem;
+    width: 50%;
+}
+    #drop-down2{
+        display: none;
+        position: absolute;
+        width: 200px;
+        background: whitesmoke;
+        text-align: center;
+        z-index: 10;
+        left: 0;
+        top: 130%;
+    }
+    #drop-down1{
+        display: none;
+        position: absolute;
+        width: 200px;
+        background: whitesmoke;
+        text-align: center;
+        z-index: 10;
+        left: 0;
+        top: 130%;
+        cursor: pointer;
+    }
+    
+.menu-ctn > li{
+    display: inline-block;
+    color: black;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    position: relative;
+    height: 10px;
+} 
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: normal;
+    position: relative;
+    min-height: 550px;
+    /* height: 10vh; */
+    z-index: 100%;
+    margin-bottom: 40px;
+}
+header h1{
+    color: white;
+    /* position: absolute; */
+    /* top: 50; */
+    margin-top: -200px;
+    margin-bottom: 30px;
+}
+
+header p{
+    color: tomato;
+    margin-top: 20px;
+    margin-bottom: 0;
+    position: absolute;
+}
+header #search-btn{
+    position: absolute;
+    min-width: 500px;
+    height: 50px;
+    bottom: 0;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    padding: 5px;
+}
+header #search-btn > i{
+    border: none;
+    font-size: 2rem;
+    color: green;
+    float: left;
+    bottom: 0;
+    right: 50px;
+    position: absolute;
+    cursor: pointer;
+    position: absolute;
+}
+header #search-btn > input{
+    flex: 1;
+    min-height: 20px;
+    min-width: 100%;
+    top: 0;
+    bottom: 0;
+    border: none;
+    outline: none;
+    padding: 20px;
+    border-radius: 4rem;
+
+}
+
+#search-btn a{
+    color: white;
+    text-align: center;
+}
+@media (max-width:700px){
+    header #search-btn > input{
+        flex: 1;
+        min-height: 30px;
+        min-width: 90%;
+    }
+    header #search-btn > i{
+        border: none;
+        font-size: 2rem;
+        color: green;
+        float: left;
+    }
+        header p {
+            margin-bottom: 10px;
+        }  
+        header #search-btn{
+            min-width: 350px; 
+        }       
+            
+#search-btn a{
+    color: white;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    text-align: center;
+}
+}
+
+
+#html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font: normal;
+    background: aquamarine;
+    height: 400px;
+    width: 100%;
+    
+}
+#html .container2 h1{
+    font-size: 4rem;
+    text-align: center;
+}
+#html .container2 p{
+    font-size: 2.5rem;
+}
+#html .container2 button{
+    display: flex;
+    justify-content: center;
+    font-size: .9rem;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    border-radius: 4rem;
+    margin: 20px;
+    padding: 8px 25px 8px 25px ;
+    outline-style: hidden; 
+    border: none; 
+    background: rgb(30, 161, 69);
+    color: white;
+}
+
+#html .container2 button:hover{
+    opacity: 0.7;
+}
+#css {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font: normal;
+    background: rgb(255, 255, 150);
+    height: 400px;
+    width: 100%;
+}
+#css .container2 h1{
+    font-size: 4rem;
+    text-align: center;
+}
+#css .container2 p{
+    font-size: 2.5rem;
+}
+#css .container2 button{
+    display: flex;
+    justify-content: center;
+    font-size: .9rem;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    border-radius: 4rem;
+    margin: 20px;
+    padding: 8px 25px 8px 25px ;
+    outline-style: hidden; 
+    border: none; 
+    background: rgb(30, 161, 69);
+    color: white;
+}
+#javascript {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font: normal;
+    background:  darkslategray; 
+    height: 400px;
+    width: 100%;
+}
+#javascript .container2 h1{
+    font-size: 4rem;
+    text-align: center;
+    color: white;
+}
+#javascript .container2 p{
+    font-size: 2.5rem;
+    color: white;
+}
+#javascript .container2 button{
+    display: flex;
+    justify-content: center;
+    font-size: .9rem;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    border-radius: 4rem;
+    margin: 20px;
+    padding: 8px 25px 8px 25px ;
+    outline-style: hidden; 
+    border: none; 
+    background: rgb(30, 161, 69);
+    color: white;
+}
+#python {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font: normal;
+    background:  wheat; 
+    height: 400px;
+    width: 100%;
+}
+#python .container2 h1{
+    font-size: 4rem;
+    text-align: center;
+    color: black;
+}
+#python .container2 p{
+    font-size: 2.5rem;
+    color: black;
+}
+#python .container2 button{
+    display: flex;
+    justify-content: center;
+    font-size: .9rem;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    border-radius: 4rem;
+    margin: 20px;
+    padding: 8px 25px 8px 25px ;
+    outline-style: hidden; 
+    border: none; 
+    background: rgb(30, 161, 69);
+    color: white;
+}
+#python {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font: normal;
+    background:  wheat; 
+    height: 400px;
+    width: 100%;
+}
+#python .container2 h1{
+    font-size: 4rem;
+    text-align: center;
+    color: black;
+}
+#python .container2 p{
+    font-size: 2.5rem;
+    color: black;
+}
+#python .container2 button{
+    display: flex;
+    justify-content: center;
+    font-size: .9rem;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    border-radius: 4rem;
+    margin: 20px;
+    padding: 8px 25px 8px 25px ;
+    outline-style: hidden; 
+    border: none; 
+    background: rgb(30, 161, 69);
+    color: white;
+}
+#python {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font: normal;
+    background:  wheat; 
+    height: 400px;
+    width: 100%;
+}
+#python .container2 h1{
+    font-size: 4rem;
+    text-align: center;
+    color: black;
+}
+#python .container2 p{
+    font-size: 2.5rem;
+    color: black;
+}
+#python .container2 button{
+    display: flex;
+    justify-content: center;
+    font-size: .9rem;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    border-radius: 4rem;
+    margin: 20px;
+    padding: 8px 25px 8px 25px ;
+    outline-style: hidden; 
+    border: none; 
+    background: rgb(30, 161, 69);
+    color: white;
+}
+#sql {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font: normal;
+    background:  lightcyan; 
+    height: 400px;
+    width: 100% ;
+    margin: auto;
+}
+#sql .container2 h1{
+    font-size: 4rem;
+    text-align: center;
+    color: black;
+}
+#sql .container2 p{
+    font-size: 2.5rem;
+    color: black;
+}
+#sql .container2 button{
+    display: flex;
+    justify-content: center;
+    font-size: .9rem;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    border-radius: 4rem;
+    margin: 20px;
+    padding: 8px 25px 8px 25px ;
+    outline-style: hidden; 
+    border: none; 
+    background: rgb(30, 161, 69);
+    color: white;
+}
+#php {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font: normal;
+    background:  pink; 
+    height: 400px;
+    width: 80%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 60px;
+    border-radius: 1rem;
+}
+#php .container2 h1{
+    font-size: 4rem;
+    text-align: center;
+    color: black;
+}
+#php .container2 p{
+    font-size: 1.3rem;
+    color: black;
+}
+#php .container2 button{
+    display: flex;
+    justify-content: center;
+    font-size: 1.9rem;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    border-radius: 4rem;
+    margin: 20px;
+    padding: 8px 25px 8px 25px ;
+    outline-style: hidden; 
+    border: none; 
+    background: rgb(30, 161, 69);
+    color: white;
+}
+#jquery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font: normal;
+    background:  yellow; 
+    height: 400px;
+    width: 80%;
+    margin: auto;
+    margin-top: 60px;
+    border-radius: 1rem;
+}
+#jquery .container2 h1{
+    font-size: 4rem;
+    text-align: center;
+    color: black;
+}
+#jquery .container2 p{
+    font-size: 1.3rem;
+    color: black;
+}
+#jquery .container2 button{
+    display: flex;
+    justify-content: center;
+    font-size: 1.9rem;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    border-radius: 4rem;
+    margin: 20px;
+    padding: 8px 25px 8px 25px ;
+    outline-style: hidden; 
+    border: none; 
+    background: rgb(30, 161, 69);
+    color: white;
+}
+#java {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font: normal;
+    background:  wheat; 
+    height: 400px;
+    width: 80%;
+    margin: auto;
+    margin-top: 60px;
+    border-radius: 1rem;
+}
+#java .container2 h1{
+    font-size: 4rem;
+    text-align: center;
+    color: black;
+}
+#java.container2 p{
+    font-size: 2.5rem;
+    color: black;
+}
+#java .container2 button{
+    display: flex;
+    justify-content: center;
+    font-size: 1.9rem;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    border-radius: 4rem;
+    margin: 20px;
+    padding: 8px 25px 8px 25px ;
+    outline-style: hidden; 
+    border: none; 
+    background: rgb(30, 161, 69);
+    color: white;
+}
+#cplus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font: normal;
+    background: darkkhaki; 
+    height: 400px;
+    width: 80%;
+    margin: auto;
+    margin-top: 60px;
+    border-radius: 1rem;
+}
+#cplus .container2 h1{
+    font-size: 4rem;
+    text-align: center;
+    color: black;
+}
+#cplus.container2 p{
+    font-size: 2.5rem;
+    color: black;
+}
+#cplus .container2 button{
+    display: flex;
+    justify-content: center;
+    font-size: 1.9rem;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    border-radius: 4rem;
+    margin: 20px;
+    padding: 8px 25px 8px 25px ;
+    outline-style: hidden; 
+    border: none; 
+    background: rgb(30, 161, 69);
+    color: white;
+}
+#w3frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font: normal;
+    background:  lightcyan; 
+    height: 400px;
+    width: 80%;
+    margin: auto;
+    margin-top: 60px;
+    border-radius: 1rem;
+}
+#w3frame .container2 h1{
+    font-size: 4rem;
+    text-align: center;
+    color: black;
+}
+#w3frame.container2 p{
+    font-size: 2rem;
+    color: black;
+}
+#w3frame .container2 button{
+    display: flex;
+    justify-content: center;
+    font-size: 1.9rem;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    border-radius: 4rem;
+    margin: 20px;
+    padding: 8px 25px 8px 25px ;
+    outline-style: hidden; 
+    border: none; 
+    background: rgb(30, 161, 69);
+    color: white;
+}
+#bootstrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font: normal;
+    background:  lightgoldenrodyellow; 
+    height: 400px;
+    width: 80%;
+    margin: auto;
+    margin-top: 60px;
+    border-radius: 1rem;
+}
+#bootstrap .container2 h1{
+    font-size: 4rem;
+    text-align: center;
+    color: black;
+}
+#bootstrap.container2 p{
+    font-size: 2.5rem;
+    color: black;
+}
+#bootstrap .container2 button{
+    display: flex;
+    justify-content: center;
+    font-size: 1.9rem;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    border-radius: 4rem;
+    margin: 20px;
+    padding: 8px 25px 8px 25px ;
+    outline-style: hidden; 
+    border: none; 
+    background: rgb(30, 161, 69);
+    color: white;
+}
+.container3 button {
+    grid-template-columns: repeat(2, 100px) ;
+    grid-template-rows: minmax(12px, auto) repeat(5, 100px);
+    align-items: center;
+    text-align: center;
+    font-size: 1.4rem;
+    font: normal;
+    background: lightgoldenrodyellow; 
+    min-height: 150px;
+    min-width: 15%;
+    margin: auto;
+    margin-top: 30px;
+    margin-left: 30px;
+    border-radius: 1rem;
+}
+.container3 .c{
+    background: lightcoral;
+    
+}
+.container3 .c-naira{
+    background: darkorange;
+}
+.container3 .r{
+    background: lightpink;
+}
+.container3 .k{
+    background: wheat;
+}
+
+
+.container3 .node{
+    background: lightskyblue;
+}
+
+container3 .react{
+    background: darkorange;
+}
+.container3 .react{
+    background: pink;
+}
+.container3 .json{
+    background: yellow;
+}
+.container3 .angular{
+    background: lightcoral;
+}
+.container3 .mysql{
+    background: wheat;
+}
+.container3 .xml{
+    background: lightseagreen;
+}
+
+.container3 .sass{
+    background: pink;
+}
+.container3 .icons{
+    background: yellow;
+}
+.container3 .rwd{
+    background: wheat;
+}
+.container3 .graphics{
+    background: wheat;
+}
+.container3 .svg{
+    background: lightseagreen;
+}
+.container3 .canvas{
+    background: pink;
+}
+.container .rasp{
+    background: yellow;
+}
+.container3 .cyber{
+    background: lightpink;
+}
+.container3 .colors{
+    background: wheat;
+}
+.container3 .git{
+    background: lightseagreen;
+}
+.container3 .mat{
+    background: pink;
+}
+.container3 .numpy{
+    background: yellow;
+}
+.container3 .pandas{
+    background: lightpink;
+}
+
+.container3 .scipy{
+    background: wheat;
+}
+.container3 .asp{
+    background: lightseagreen;
+}
+.container3 .access{
+    background: pink;
+}
+.container3 .app{
+    background: darkorange;
+}
+
+.container3 .c-naira{
+    background: yellow;
+}
+.container3 .go{
+    background: lightcoral;
+}
+.container3 .type{
+    background: wheat;
+}
+.container3 .django{
+    background: lightseagreen;
+}
+.container3 excel{
+    background: lightseagreen;
+}
+.container3 google{
+    background: yellow;
+}
+.container3 .machine{
+    background: pink;
+}
+.container3 .artificial{
+    background: lightcoral;
+}
+.container3 .statitics{
+    background: lightcoral;
+}
+.container3 .data{
+    background: wheat;
+}
+@media all and (max-width:500px){
+   .container3 button{
+       min-width: 90%;
+       min-height: 150px;
+       grid-template-columns: repeat(2, 100px);
+       grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+   } 
+}
+
+#w3school {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: normal;
+    min-height: 400px;
+    width: 100%;
+    margin: auto;
+    margin-top: 60px;
+}
+#w3school .container2 h1{
+    font-size: 4rem;
+    text-align: center;
+    color: white;
+}
+#w3school .container2 p{
+    font-size: 2.5rem;
+    color: white;
+}
+#w3school .container2 button{
+    display: flex;
+    justify-content: center;
+    font-size: 1.9rem;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    border-radius: 4rem;
+    margin: 20px;
+    padding: 8px 25px 8px 25px ;
+    outline-style: hidden; 
+    border: none; 
+    background: rgb(30, 161, 69);
+    color: white;
+}
+#codeeditor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font: normal;
+    background:   rgba(0, 0, 0, 0.95); 
+    min-height: 400px;
+    width: 100%;
+    margin: auto;
+}
+#codeeditor .container2 h1{
+    font-size: 4rem;
+    text-align: center;
+    color: white;
+}
+#codeeditor .container2 p{
+    font-size: 2.5rem;
+    color: white;
+}
+#codeeditor .container2 button{
+    display: flex;
+    justify-content: center;
+    font-size: 1.9rem;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    border-radius: 4rem;
+    margin: 20px;
+    padding: 8px 25px 8px 25px ;
+    outline-style: hidden; 
+    border: none; 
+    background:  rgb(30, 161, 69); ;
+    color: white;
+}
+
+#colorpicker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font: normal;
+    background:  wheat; 
+    min-height: 400px;
+    width: 100%;
+    margin: auto;
+    /* margin-top: 60px; */
+}
+#colorpicker .container2 h1{
+    font-size: 4rem;
+    text-align: center;
+    color:black ;
+}
+#colorpicker .container2 p{
+    font-size: 2.5rem;
+    color: black;
+}
+#colorpicker .container2 button{
+    display: flex;
+    justify-content: center;
+    font-size: 1.9rem;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    border-radius: 4rem;
+    margin: 20px;
+    padding: 8px 25px 8px 25px ;
+    outline-style: hidden; 
+    border: none; 
+    background:  rgb(30, 161, 69); ;
+    color: white;
+}
+#colorpicker .container2 #logo{
+    background: none;
+    margin-top: 20px;
+    width: 65%;
+    margin-bottom: 40px;
+}
+#codegame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font: normal;
+    background: lightblue; 
+    min-height: 400px;
+    width: 100%;
+    margin: auto;
+    /* margin-top: 60px; */
+}
+#codegame .container2 h1{
+    font-size: 4rem;
+    text-align: center;
+    color: black;
+}
+
+#codegame .container2 img{
+margin-top: 10px;
+margin-bottom: 20px;
+}
+#codegame .container2 p{
+    font-size: 2.5rem;
+    color: black;
+}
+#codegame .container2 button{
+    display: flex;
+    justify-content: center;
+    font-size: 1.9rem;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    border-radius: 4rem;
+    margin: 20px;
+    margin-bottom: 20px;
+    padding: 8px 25px 8px 25px ;
+    outline-style: hidden; 
+    border: none; 
+    background:  rgb(30, 161, 69); ;
+    color: black;
+}
+#exercise {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font: normal;
+    background:  rgba(0, 0, 0, 0.95); 
+    min-height: 350px;
+    width: 100%;
+    margin: auto;
+    /* margin-top: 60px; */
+}
+#exercise .container2 h1{
+    font-size: 4rem;
+    text-align: center;
+    color: white;
+}
+#exercise .container2 p{
+    font-size: 2.5rem;
+    color: white;
+}
+#exercise .container2 button{
+    display: flex;
+    justify-content: center;
+    font-size: 1.9rem;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    /* border-radius: 4rem; */
+    margin: 20px;
+    padding: 47px ;
+    outline-style: hidden; 
+    border: none; 
+    background:  rgb(30, 161, 69); ;
+    color: white;
+    box-sizing: border-box;
+    margin-bottom: 70px;
+}
+
+#webtemplates {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font: normal;
+    background: whitesmoke; 
+    min-height: 400px;
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+#webtemplates .container2 h1{
+    font-size: 4rem;
+    text-align: center;
+    color: black;
+}
+
+#webtemplates .container2 image{
+    min-width: 30px;
+    min-height: 300px;
+    position: absolute;
+    justify-content:center ;
+}
+img{
+    width: 50%;
+}
+#webtemplates .container2 p{
+    font-size: 2.5rem;
+    color: black;
+}
+#webtemplates .container2 button{
+    display: flex;
+    justify-content: center;
+    font-size: 1.9rem;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    border-radius: 4rem;
+    margin: 20px;
+    padding: 8px 25px 8px 25px ;
+    outline-style: hidden; 
+    border: none; 
+    background:  rgb(30, 161, 69); ;
+    color: black;
+}
+
+#kickstart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.4rem;
+    font: normal;
+    /* background: rgba(0, 0, 0, 0.95);  */
+    height: 600px;
+    width: 100%;
+    margin: auto;
+    margin-top: 60px;
+}
+#kickstart .container2 h1{
+    font-size: 4rem;
+    text-align: center;
+    color: pink;
+}
+#kickstart .container2 p{
+    font-size: 2.5rem;
+    /* color: pink; */
+}
+#kickstart .container2 button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.9rem;
+    margin: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    text-align: center;
+    border-radius: 4rem;
+    margin: 20px;
+    margin-bottom: 60px;
+    padding: 8px 25px 8px 25px ;
+    outline-style: hidden; 
+    border: none; 
+    background:  rgb(30, 161, 69); ;
+    color: black;
+}
+
+#snippet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.4rem;
+    font: normal;
+    background: whitesmoke; 
+    min-height: 400px;
+    width: 100%;
+    margin: auto;
+    /* margin-top: 60px; */
+}
+#snippet .container2 h1 h2{
+    font-size: 4rem;
+    text-align: center;
+    color: black;
+}
+#snippet .container2 p{
+    font-size: 2.5rem;
+    color: black;
+}
+#snnipet .container2 button{
+    display: flex;
+    justify-content: center;
+    font-size: 1.9rem;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    border-radius: 4rem;
+    margin: 20px;
+    padding: 8px 25px 8px 25px ;
+    outline-style: hidden; 
+    border: none; 
+    background:  rgb(30, 161, 69); 
+    color: black;
+}
+
+#forum {
+    display: flex;
+    justify-content: center;
+     /* position: relative; */
+    align-items: center;
+    font-size: 2.4rem;
+    font: normal;
+    min-height: 350px;
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+}
+#forum .container2 h1,h3, .icon{
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    gap: 12%;
+}
+#forum .container2 p{
+    font-size: 2.5rem;
+    color: white;
+    margin-top: 50px;
+}
+#forum .container2 button{
+    /* display: inline-block; */
+    /* justify-content: center; */
+    font-size: 1.9rem;
+    position: inherit;
+    align-items: center;
+    text-align: center;
+    /* grid-template-columns: repeat(4, 10px); */
+    /* grid-template-rows: repeat(2, 10px); */
+    border-radius: 4rem;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 8px ;
+    outline-style: hidden; 
+    border: none; 
+    background:  rgb(30, 161, 69); ;
+    color: white;
+}
+@media (max-width: 80px){
+    #forum .container2 p{
+        font-size: 2.5rem;
+        color: white;
+        margin-top: 50px;
+            
+    }
+    #forum .container2 h1,h3{
+        font-size: 1rem;
+        text-align: center;
+        color: white;
+        min-width: 60%;
+    }
+    
+#forum {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:70% ;
+    min-height: 300px;
+}
+}
+
+
+
+ 
+
+
+ 
